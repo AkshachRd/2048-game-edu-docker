@@ -1,0 +1,19 @@
+services:
+  instance_1:
+    build: .
+    image: 2048-game-edu-docker:2.0
+    container_name: instance_1
+    ports:
+      - "8080:80"
+  instance_2:
+    build: .
+    image: 2048-game-edu-docker:2.0
+    container_name: instance_2
+    ports:
+      - "8081:80"
+  instance_3:
+    build: .
+    image: 2048-game-edu-docker:2.0
+    container_name: instance_3
+    ports:
+      - "8083:80"
